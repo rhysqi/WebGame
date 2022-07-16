@@ -32,7 +32,7 @@ document.addEventListener('keypress', (Event) =>
     }
     else if(keycode == 3){
         player.innerHTML = ' <img src="media/3.jpg" style="width: 80px; transform: rotate(-60deg); position: absolute; margin-top: 25px; margin-left: -40px" />';
-        document.getElementById("com-score").innerHTML = "Lose"; document.getElementById("Player-Score").innerHTML = "Win";
+        document.getElementById("com-score").innerHTML = "Win"; document.getElementById("Player-Score").innerHTML = "Lose";
         if (digit == 0){
             bot.innerHTML = ' <img src="media/1.jpg" style="width: 80px; transform: rotate(80deg); position: absolute; margin-top: 35px; margin-left: -40px" />';
             document.getElementById("com-score").innerHTML = "Lose"; document.getElementById("Player-Score").innerHTML = "Win";
@@ -57,8 +57,8 @@ function BStart(Event)
 };
 function BHelp(Event)
 {
-    let text1 = "Tekan 1 untuk gunting"; let text2 = "Tekan 2 untuk Batu"; let text3 = "Tekan 2 untuk Kertas";
-    alert(text1 + "\n" + text2 + "\n" +text3);
+    let text1 = "Tekan 1 untuk gunting"; let text2 = "Tekan 2 untuk Batu"; const text3 = "Tekan 3 untuk Kertas"; let text4 = "Tekan S Untuk Mulai";
+    alert(text1 + "\n" + text2 + "\n" +text3 + "\n" +text4);
 };
 
 document.addEventListener('keypress', (Event) =>{
@@ -67,7 +67,7 @@ document.addEventListener('keypress', (Event) =>{
         location.reload();
     }
     else if (code == 'h'){
-        let text1 = "Tekan 1 untuk gunting"; let text2 = "Tekan 2 untuk Batu"; let text3 = "Tekan 2 untuk Kertas"; let text4 = "Tekan S untuk mulai dari awal";
+        let text1 = "Tekan 1 untuk gunting"; let text2 = "Tekan 2 untuk Batu"; const text3 = "Tekan 3 untuk Kertas"; let text4 = "Tekan S Untuk Mulai";
         alert(text1 + "\n" + text2 + "\n" +text3 + "\n" +text4);
     };
 });
