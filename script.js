@@ -32,10 +32,10 @@ document.addEventListener('keypress', (Event) =>
     }
     else if(keycode == 3){
         player.innerHTML = ' <img src="media/3.jpg" style="width: 80px; transform: rotate(-60deg); position: absolute; margin-top: 25px; margin-left: -40px" />';
-        document.getElementById("com-score").innerHTML = "Win"; document.getElementById("Player-Score").innerHTML = "Lose";
+        document.getElementById("com-score").innerHTML = "Lose"; document.getElementById("Player-Score").innerHTML = "Win";
         if (digit == 0){
             bot.innerHTML = ' <img src="media/1.jpg" style="width: 80px; transform: rotate(80deg); position: absolute; margin-top: 35px; margin-left: -40px" />';
-            document.getElementById("com-score").innerHTML = "Lose"; document.getElementById("Player-Score").innerHTML = "Win";
+            document.getElementById("com-score").innerHTML = "Win"; document.getElementById("Player-Score").innerHTML = "Lose";
         }else if(digit == 1){
             bot.innerHTML = ' <img src="media/2.jpg" style="width: 80px; transform: rotate(-90deg); position: absolute; margin-top: 25px; margin-left: -40px" />';
         }else{
