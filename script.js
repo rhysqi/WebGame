@@ -67,7 +67,7 @@ document.addEventListener('keypress', (Event) =>{
         location.reload();
     }
     else if (code == 'h'){
-        let text1 = "Tekan 1 untuk gunting"; let text2 = "Tekan 2 untuk Batu"; let text3 = "Tekan 2 untuk Kertas";
-        alert(text1 + "\n" + text2 + "\n" +text3);
+        let text1 = "Tekan 1 untuk gunting"; let text2 = "Tekan 2 untuk Batu"; let text3 = "Tekan 2 untuk Kertas"; let text4 = "Tekan S untuk mulai dari awal";
+        alert(text1 + "\n" + text2 + "\n" +text3 + "\n" +text4);
     };
 });
